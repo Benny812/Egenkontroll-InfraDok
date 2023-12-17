@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Egenkontroll</title>
+  </head>
+
+  <body>
+    <div class="p-4">
+      <!--content wrapper -->
+      <header>
+        <div class="grid grid-cols-3 border-2 border-green-300">
+          <div class="flex items-center justify-center"><img src="img/Gravtjanst_logo.jpg" alt="Gr logo"></div>
+          <div class=" flex items-center justify-center text-xl font-bold">EGENKONTROLL</div>
+          <div class=" flex items-center justify-center"><img src="svg/markmodeller-horisontell-logo-one-colour-rgb.svg" alt="Mm logo" ></div>
+         
+        
+
+        </div>
+
+      </header>
+
+      
+      <div class="border-2 border-red-700">
+        <h2 class="text-lg">Allmän information</h2>
+        <ul class="flex flex-col">
+          <li class="flex justify-between my-1">
+            <strong>Projektnummer:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="number"
+              id="projektnummer"
+              name="projektnummer"
+              min="0"
+              step="1"
+              required
+              placeholder=" Projektnummer"
+              title="Ange SmartDok projektnummer ex: 71022030"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Arbetsplats:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="Arbetsplats"
+              name="Arbetsplats"
+              required
+              placeholder=" Arbetsplats"
+              title="Ange arbetsplats ex: Norrlandsvägen GC"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Ort:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="Ort"
+              name="Ort"
+              required
+              placeholder=" Västervik"
+              title="Ange Ort ex: Västervik"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>NR:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="NR"
+              name="NR"
+              required
+              placeholder=" 5"
+              title="Ange Löpnummer på egenkontroll inom projektet ex: 5"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Beställare:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="Beställare"
+              name="Beställare"
+              required
+              placeholder=" Beställare"
+              title="Ange Beställare ex: Västerviks kommun samhällsbyggnadsenheten"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Projektledare/Arbetsledare:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="Projektledare"
+              name="Projektledare"
+              required
+              placeholder=" Projektledare"
+              title="Ange Projektledare/Arbetsledare ex: Andreas Aronsson
+                      KEAB"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Datum:</strong
+            ><input
+              type="date"
+              name="Datum"
+              id="Datum"
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Upprättad:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="Upprättad"
+              name="Upprättad"
+              required
+              placeholder=" Upprättad"
+              title="Ange Upprättad av ex: Benny Johansson"
+            />
+          </li>
+          <li class="flex justify-between my-1">
+            <strong>Ritningsnummer:</strong>
+            <input
+              class="w-full max-w-md border border-gray-400 px-2 py-1 rounded"
+              type="text"
+              id="Ritningsnummer"
+              name="Ritningsnummer"
+              required
+              placeholder=" Ritningsnummer"
+              title="Ange Ritningsnummer ex: K2-150-014-N10-04-00-00 (BEAst exempel) "
+            />
+          </li>
+          
+            <span>
+              <strong>Kontrollkrav:</strong>
+            </span>
+            <div class="grid grid-cols-2">
+                <div class="   grid grid-rows-2 gap-y-2">
+                    <p class="grid justify-end">Bygghandling:</p>
+                    <p class="grid justify-end">AMA Anläggning:</p>
+                </div>
+    
+                <div class=" grid grid-rows-2 gap-y-2">
+                    
+                        <li class="flex items-center justify-end px-4 ">
+                            
+                            <input class="" type="checkbox" name="Bygghandling" id="Bygghandling" title="När det finns ritning/teknisk beskrivning " />
+                            
+                        </li>
+                        
+                        <li class="flex items-center justify-end px-4">
+                            
+                            <input class=" " type="checkbox" name="AMA" id="AMA" title="Om det inte finns teknisk beskrivning/ritning ex vid totalentreprenad eller om det helt enkelt saknas underlag ange 'AMA'  " />
+                           
+                        </li>
+                 
+                    
+                </div>
+            </div>
+
+
+
+
+            <!-- <ul class="grid grid-rows-2">
+                <li class="flex items-center justify-between">
+                    <label for="Bygghandling" class="text-red-800">Bygghandling</label>
+                    <input class="" type="checkbox" name="Bygghandling" id="Bygghandling" />
+                </li>
+                
+                <li class="flex items-center justify-between">
+                    <label for="AMA">AMA Anläggning</label>
+                    <input class="" type="checkbox" name="AMA" id="AMA" />
+                </li>
+            </ul> -->
+            
+
+
+            <!-- <ul class="grid grid-rows-2">
+                <li class="grid grid-cols-2">
+                    <label
+                      for="Bygghandling"
+                      class="text-red-800  grid col-span-1"
+                      >Bygghandling</label
+                    >
+                    <input
+                      class=""
+                      type="checkbox"
+                      name="Bygghandling"
+                      id="Bygghandling"
+                    />
+                  </li>
+                  
+                  <li class="grid grid-cols-2 justify-end">
+                      <label for="AMA">AMA Anläggning</label>
+                    <input
+                      class=""
+                      type="checkbox"
+                      name="AMA"
+                      id="AMA"
+                    />
+                  </li>
+            </ul> -->
+
+ 
+          </ul>
+
+        </ul>
+      </div>
+
+      <div class="border-2 border-cyan-400">
+        <!--Krav sektion-->
+        <div  >
+          <h2 class="text-red-600">Överbyggnad Kategori B</h2>
+        </div>
+        <ul>
+          <li>
+            <strong>Förstärkningslager:</strong> ☒ AMA Anläggning 20 DCB.212
+          </li>
+          <li><strong>Bärlager till belagda ytor:</strong> ☐ DCB.312</li>
+          <li><strong>Justeringslager:</strong> ☐ DCB.522</li>
+          <li><strong>Stödremsa:</strong> ☐ DCB.612</li>
+          <li><strong>Geotextil under överbyggnad:</strong> ☐ DBB.3131</li>
+          <li><strong>Geotextil bruksklass:</strong> N1☐ N2☐ N3☐ N4☐ N5☐</li>
+        </ul>
+
+
+      </div>
+      <h2>Kontrollpunkt</h2>
+      <table class="table-auto border border-collapse border-gray-800">
+        <tr>
+          <th class="px-4 py-2">Datum</th>
+          <th class="px-4 py-2">Sign</th>
+          <th class="px-4 py-2">Från: # , yta , etc…..</th>
+          <th class="px-4 py-2">Till: # , yta , etc….</th>
+          <th class="px-4 py-2">Kommentar, anmärkning, etc….</th>
+          <th class="px-4 py-2">Rapportnummer</th>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">16/11</td>
+          <td class="border px-4 py-2">BJ</td>
+          <td class="border px-4 py-2">1. #8</td>
+          <td class="border px-4 py-2">#11</td>
+          <td class="border px-4 py-2">0-90</td>
+          <td class="border px-4 py-2"></td>
+        </tr>
+      </table>
+
+      <p><strong>Datum:</strong> Klicka eller tryck här för att ange datum.</p>
+      <p>
+        <strong>Verifieras:</strong> Klicka eller tryck här för att ange text.
+      </p>
+      <p><strong>Sign:</strong></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
